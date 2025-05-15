@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0e6ff;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-half {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f0e6ff;
+}
+
+.bottom-half {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 60px; /* 버튼 높이 확보 */
+}
+
+.card {
+  background-color: #ffffff;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expandable-header {
+  background-color: #ffffff;
+  color: #5a4fcf;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  font-weight: bold;
+}
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+.expanded .expandable-content {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #5a4fcf;
+}
+
+.card-header:hover {
+  background-color: #f2f2f2;
+}
+
+/* 고정 버튼 스타일 */
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0e6ff;
+  padding: 10px 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.move-btn {
+  background-color: #5a4fcf;
+  color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.move-btn:hover {
+  background-color: #403291;
+}
