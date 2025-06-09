@@ -4,58 +4,39 @@
   <meta charset="UTF-8">
   <title>Expandable Side Panel</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
   <div class="container">
+    <!-- 고정된 상단 버튼 -->
+    <div class="fixed-top mt-2 d-flex justify-content-between align-items-center p-4">
+      <!-- flex 컨테이너: justify-content-between 으로 좌우 끝 배치, align-items-center 로 세로 중앙 정렬 -->
+      <div class="text-white fw-bold fs-5">
+        지구다 바로가기
+      </div>
+      <button id="moveBtn" class="move-btn">
+        〉
+      </button>
+    </div>
     <!-- 상단 절반: 키워드 카드들 -->
     <div class="top-half">
-      <div class="card expandable-card">
-        <div class="card-header expandable-header">
-          <span class="card-title">▼ 관세 인상</span>
-        </div>
-        <div class="card-body expandable-content">
-          외국에서 들어오는 물건에 붙는 세금이 올라서, 수입품 가격이 더 비싸져요.
-        </div>
-      </div>
-
-      <div class="card expandable-card">
-        <div class="card-header expandable-header">
-          <span class="card-title">▼ 국채 신뢰도 하락</span>
-        </div>
-        <div class="card-body expandable-content">
-          외국에서 들어오는 물건에 붙는 세금이 올라서, 수입품 가격이 더 비싸져요.
-        </div>
-      </div>
-
-      <div class="card expandable-card">
-        <div class="card-header expandable-header">
-          <span class="card-title">▼ 입항 수수료 상승</span>
-        </div>
-        <div class="card-body expandable-content">
-          외국에서 들어오는 물건에 붙는 세금이 올라서, 수입품 가격이 더 비싸져요.
-        </div>
-      </div>
+      <!-- word.js에서 동적으로 생성함 -->
     </div>
 
     <!-- 하단 절반: Check Point -->
     <div class="bottom-half">
-      <h4>✔ Check Point</h4>
-      <p>
-        트럼프가 중국산 물건에 높은 관세를 매기자, 미중 무역전쟁이 시작됐고, 수입비용 상승과 공급망 혼란이 생겼어요.
-        미국은 자국 산업 보호에 돈을 더 쓰기 시작했는데, 이것 때문에 투자자들은 "국채 이자 잘 줄 수 있을까?" 하고 걱정했죠.
-        그래서 미국 국채 신뢰도는 떨어지고, 달러 가치도 하락했어요.
-        게다가 입항 수수료까지 오르자, 기업들은 "중국 비싸니까 다른 나라로 가자!"고 판단했어요.
-      </p>
+      <!-- summary.js에서 동적으로 생성 -->
     </div>
 
     <!-- 고정된 하단 버튼 -->
     <div class="fixed-bottom">
-      <button id="moveBtn" class="move-btn">지구다로 이동</button>
+      <button id="stackBtn" class="stack-btn">지식으로 쌓기</button>
     </div>
   </div>
 
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="panel.js"></script>
+  <script src="static/js/button.js"></script>
+  <script src="static/js/word.js"></script>
+  <script src="static/js/summary.js"></script>
 </body>
 </html>
