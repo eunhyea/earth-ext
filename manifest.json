@@ -1,8 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Custom Side Panel",
+  "name": "Earth-Ext",
   "version": "1.0",
-  "permissions": ["sidePanel"],
+  "permissions": [
+    "sidePanel",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "background.js"
   },
