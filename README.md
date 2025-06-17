@@ -29,4 +29,4 @@
 ## 유튜브와 관련된 용어 설명과 내용 요약을 제공하고, 지식를 쌓는데 도움 주는 서비스
 
 ### 1. UI
-![alt text](assets/image.png)
+<img width="716" alt="image" src="https://github.com/user-attachments/assets/54f961e8-3b60-4598-8c68-15b2ac9ebeb2" />
